@@ -27,7 +27,7 @@ namespace cadastroAlunoEstudo
                 get { return _idade; }
                 set { _idade = value; }
             }
-public string telefone
+            public string telefone
             {
                 get { return _telefone; }
                 set { _telefone = value; }
@@ -37,16 +37,16 @@ public string telefone
                 get { return _mail; }
                 set { _mail = value; }
             }
-        public string nomeResponsavel
+            public string nomeResponsavel
             {
                 get { return _nomeResponsavel; }
                 set { _nomeResponsavel = value; }
             }
             public int matricula
             {
-                get { return _matricula;}
+                get { return _matricula; }
             }
-            public aluno(string nome, int idade, string telefone, string cpf,  string mail,  string nomeResponsavel, int matricula)
+            public aluno(string nome, int idade, string telefone, string cpf, string mail, string nomeResponsavel, int matricula)
             {
                 _nome = nome;
                 _idade = idade;
@@ -56,9 +56,14 @@ public string telefone
                 _nomeResponsavel = nomeResponsavel;
                 _matricula = matricula;
             }
-
-
+            public voide MostrarInformacoes()
+                string informacoes = $"Nome: {_nome}\n" +
+                $"idade: {_idade}\n" +
+                $"Telefone {_telefone}\n" +
+                $"cpf: {_cpf}\n" +
+                $"mail: {_mail}\n" +
+                $"Nome do Responsável: {_nomeResponsavel}\n" +
+                $"Matricula: {_matricula}\n" +
+                Consolle.WriiteLiiin(informacoes);
         }
-
-
-}
+    }
